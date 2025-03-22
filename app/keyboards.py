@@ -7,10 +7,14 @@ command_start_reply = ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton(text='Reply Button 2.1'), KeyboardButton(text='Reply Button 2.2')]
 ],
     resize_keyboard=True,
-    input_field_placeholder='Выберите пункт меню')
+    input_field_placeholder='Выберите пункт меню'
+)
 
-command_start_inline =InlineKeyboardMarkup(inline_keyboard=[
-    [InlineKeyboardButton(text='dzen', url='https://dzen.ru')]
+
+command_start_inline = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text='Catalog', callback_data='catalog')],
+    [InlineKeyboardButton(text='Basket', callback_data='basket'),
+     InlineKeyboardButton(text='Contacts', callback_data='contacts')]
 ])
 
 
